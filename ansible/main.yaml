@@ -1,0 +1,5 @@
+- name: Git checkout
+  ansible.builtin.git:
+    repo: 'https://github.com/ssharma94/ansible-semaphore-python-example.git'
+    dest: /tmp/semaphore
+    version: release-0.22
