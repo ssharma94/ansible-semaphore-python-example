@@ -1,5 +1,9 @@
-- name: Git checkout
-  ansible.builtin.git:
-    repo: 'https://github.com/ssharma94/ansible-semaphore-python-example.git'
-    dest: /tmp/semaphore
-    version: release-0.22
+---
+- hosts: localhost
+  #remote_user: root
+  tasks:
+  - name: Download the Python code from the GitRepo
+    become: yes
+    git:
+      repo: 'https://github.com/ssharma94/ansible-semaphore-python-example.git'
+      dest: "/tmp/semaphore"
