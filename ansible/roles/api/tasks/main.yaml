@@ -1,0 +1,7 @@
+- name: Pull an image
+  community.docker.docker_image:
+    name: library/ubuntu
+    source: pull
+    # Select platform for pulling. If not specified, will pull whatever docker prefers.
+    pull:
+      platform: amd64
