@@ -1,0 +1,3 @@
+ansible/venv
+app/__pycache__
+ansible/venv/bin/activate.csh
